@@ -4,18 +4,15 @@ description: |
   A short description of the post.
 author:
   - name: Nora Jones
-    url: https://example.com/norajones
+    url: https://topographos.netlify.com
 date: 01-05-2019
+bibliography: references.bib
 output:
   radix::radix_article:
     self_contained: false
 ---
+>I intend to draw upon my education and professional career to design an interdisciplinary doctoral project within the Landscape of Complex Society Research Group. I hold degrees in Archaeology, Arabic Studies and Geographic Information Science, and have gained considerable experience in these areas working in various private and public settings. Currently, I am working as a GIS Analyst within the field of data engineering. Hence, I believe myself to be well equipped for carrying out a scientific inquiry into one of the most puzzling phenomena in the history of the Ancient Near East, the Great Dispersal. Using data science methods, I will translate archaeological surveys into valuable and meaningful insights and use diverse media to visualize and communicate results.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-Radix is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Radix at <https://rstudio.github.io/radix>.
+## Background
+The history of the Near East has been characterised by cycles of growth and collapse. Though periods of political and social centralization were interspersed with periods of fragmentation, the overall trend was an evolution from city-states into larger, more complex political entities [@liverani_historical_2005]. The transition from Bronze Age to Iron Age that unravelled around 1200 BC culminated in the emergence of successive Large Territorial Empires. Consequently, the long list of empires inaugurated by the Neo-Assyrians dominated the region from about the 9th century BC until the early 20th century. This period of upheaval witnessed profound social, political, economic and cultural changes. The level of urbanisation declined, trade was disrupted, and invaders appeared. Although causes of these events are not fully understood, they have been attributed to social revolution, ecological disaster, and large-scale migrations, amongst other factors [@mieroop_history_2015]. Yet, the distinction between consequences and catalysts remains ambiguous. Moreover, archaeology still struggles to explain the underlying mechanisms of accompanying changes in landscape organization in Northern Mesopotamia and the Levant. The tell-dominated landscape of the Bronze Age was reshaped and the nucleated centres were superseded by smaller, rural settlements and occasional large cities. This structural change in settlement pattern was termed ‘The Great Dispersal’ [@wilkinson_archaeological_2003]. The new arrangement of space endured until the late Islamic period.
 
