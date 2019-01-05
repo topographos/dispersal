@@ -1,0 +1,17 @@
+[
+  {
+    "path": "posts/2019-01-05-project-proposal/",
+    "title": "Project Proposal",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2019-01-05",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-01-05T22:33:34+00:00"
+  }
+]
