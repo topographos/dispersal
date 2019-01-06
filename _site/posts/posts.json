@@ -5,13 +5,13 @@
     "description": "A short description of the post.",
     "author": [
       {
-        "name": "Nora Jones",
+        "name": "Michal Michalski",
         "url": "https://topographos.netlify.com"
       }
     ],
     "date": "2019-01-05",
     "categories": [],
-    "preview": {},
-    "last_modified": "2019-01-05T22:45:08+00:00"
+    "preview": "posts/2019-01-05-project-proposal/figures/transition.png",
+    "last_modified": "2019-01-06T23:46:57+00:00"
   }
 ]
