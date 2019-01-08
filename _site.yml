@@ -4,9 +4,13 @@ description: |
   The Great Dispersal
 output_dir: "_site"
 navbar:
+  logo:
+      image: images/logohex.png
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
-output: radix::radix_article
+output:
+  radix::radix_article:
+    css: style.css

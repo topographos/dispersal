@@ -1,0 +1,35 @@
+body {
+  text-align: justify;
+}
+
+.radix-site-nav {
+  color: white;
+  background-color: #6c8b8d;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.radix-site-nav a {
+  color: rgb(224, 214, 193);
+  text-decoration: none;
+}
+
+.radix-site-nav a:hover {
+  color: #914646;
+}
+
+.radix-site-header .logo img {
+   display: inline-block;
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   max-height: 50px;
+   width: auto;
+   margin-bottom: 5px;
+   padding-right: 5px;
+   padding-top: 5px;
+   vertical-align: bottom;
+ }
+
+ .title {
+  vertical-align: top;
+}

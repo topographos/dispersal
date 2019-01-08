@@ -1263,8 +1263,47 @@
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <style type="text/css">
+  body {
+    text-align: justify;
+  }
+  
+  .radix-site-nav {
+    color: white;
+    background-color: #6c8b8d;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .radix-site-nav a {
+    color: rgb(224, 214, 193);
+    text-decoration: none;
+  }
+  
+  .radix-site-nav a:hover {
+    color: #914646;
+  }
+  
+  .radix-site-header .logo img {
+     display: inline-block;
+     background-size: 100% auto;
+     background-repeat: no-repeat;
+     max-height: 50px;
+     width: auto;
+     margin-bottom: 5px;
+     padding-right: 5px;
+     padding-top: 5px;
+     vertical-align: bottom;
+   }
+  
+   .title {
+    vertical-align: top;
+  }
+  
+  </style>
   <!--/radix_placeholder_site_in_header-->
 
+  <link rel="stylesheet" href="style.css" type="text/css"/>
 
 </head>
 
@@ -1281,6 +1320,9 @@
 <header class="header header--fixed" role="banner">
 <nav class="radix-site-nav radix-site-header">
 <div class="nav-left">
+<a class="logo">
+<img src="images/logohex.png"/>
+</a>
 <a href="index.html" class="title">The Great Dispersal</a>
 </div>
 <div class="nav-right">
