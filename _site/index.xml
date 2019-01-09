@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>The Great Dispersal</title>
+    <link>https://dispersal.netlify.com/</link>
+    <atom:link href="https://dispersal.netlify.com/index.xml" rel="self" type="application/rss+xml"/>
+    <description>The Great Dispersal
+</description>
+    <generator>Radix</generator>
+    <lastBuildDate>Sat, 05 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Project Proposal</title>
+      <dc:creator>Michal Michalski</dc:creator>
+      <link>https://dispersal.netlify.com/posts/2019-01-05-project-proposal</link>
+      <description>The Great Dispersal - a spatio-temporal analysis of settlements patterns in the Northern Fertile Crescent from the Iron Age to the Late Islamic period.</description>
+      <guid>https://dispersal.netlify.com/posts/2019-01-05-project-proposal</guid>
+      <pubDate>Sat, 05 Jan 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://dispersal.netlify.com/posts/2019-01-05-project-proposal/figures/transition.png" medium="image" type="image/png" width="867" height="380"/>
+    </item>
+  </channel>
+</rss>

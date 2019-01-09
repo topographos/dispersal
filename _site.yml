@@ -1,7 +1,14 @@
 name: "dispersal"
 title: "The Great Dispersal"
+listing: posts
 description: |
   The Great Dispersal
+base_url: https://dispersal.netlify.com/
+collections:
+  posts:
+    disqus: micharcheo
+    share: [twitter, linkedin]
+    citations: true
 output_dir: "_site"
 navbar:
   logo:
@@ -11,6 +18,9 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - icon: fab fa-github
+      href: https://github.com/topographos
 output:
   radix::radix_article:
     css: style.css
+

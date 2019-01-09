@@ -1,11 +1,13 @@
 ---
 title: "Project Proposal"
 description: |
-  A short description of the post.
+  The Great Dispersal - a spatio-temporal analysis of settlements patterns in the Northern Fertile Crescent from the Iron Age to the Late Islamic period.
 author:
   - name: Michal Michalski
     url: https://topographos.netlify.com
 date: 01-05-2019
+repository_url: https://github.com/topographos/dispersal/
+creative_commons: CC BY-NC
 bibliography: references.bib
 output:
   radix::radix_article:
