@@ -2,11 +2,11 @@ name: "dispersal"
 title: "The Great Dispersal"
 listing: posts
 description: |
-  
+  The Great Dispersal
 base_url: https://dispersal.netlify.com/
 collections:
   posts:
-    disqus: micharcheo
+    disqus: dispersal
     share: [twitter, linkedin]
     citations: true
 output_dir: "_site"
