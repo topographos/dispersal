@@ -3,7 +3,7 @@ title: "The Great Dispersal"
 listing: posts
 description: |
   The Great Dispersal
-base_url: https://dispersal.netlify.com/
+base_url: https://dispersal.rbind.io
 collections:
   posts:
     disqus: dispersal
