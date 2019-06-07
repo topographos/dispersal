@@ -1,5 +1,5 @@
 ---
 title: "The Great Dispersal"
-site: radix::radix_website
+site: distill::distill_website
 listing: posts
 ---

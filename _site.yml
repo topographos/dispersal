@@ -21,6 +21,6 @@ navbar:
     - icon: fab fa-github
       href: https://github.com/topographos
 output:
-  radix::radix_article:
+  distill::distill_article:
     css: style.css
 
