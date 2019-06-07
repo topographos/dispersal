@@ -10,7 +10,7 @@ repository_url: https://github.com/topographos/dispersal/
 creative_commons: CC BY-NC
 bibliography: references.bib
 output:
-  radix::radix_article:
+  radix::distill_article:
     self_contained: false
 ---
 >1...2...3... Start
