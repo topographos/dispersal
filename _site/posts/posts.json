@@ -1,0 +1,18 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to The Great Dispersal",
+    "description": "Welcome to our new blog, The Great Dispersal. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-01-03",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2021-01-03T16:37:29+00:00",
+    "input_file": {}
+  }
+]
