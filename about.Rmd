@@ -1,5 +1,5 @@
 ---
-title: "Tobi Burns"
+title: "Michal Michalski"
 image: "images/michal.jpg"
 links:
   - label: LinkedIn
