@@ -1,7 +1,7 @@
 name: "dispersal"
 title: "The Great Dispersal"
 description: |
-  The Great Dispersal
+  Blog dedicated to Computational Archaeology in the Middle East
 output_dir: "_site"
 theme: theme.css
 base_url: https://dispersal.rbind.io/
@@ -11,9 +11,12 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - icon: fa fa-rss
+      href: index.xml
 search: false
 collections:
   posts:
     share: [twitter, linkedin]
+    custom: _custom.html
 output: distill::distill_article
 
