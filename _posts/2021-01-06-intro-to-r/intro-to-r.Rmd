@@ -1,0 +1,34 @@
+---
+title: "Intro to R for Landscape Archaeologists"
+description: |
+  A short description of the post.
+author:
+  - name: Michal Michalski
+    url: https://example.com/norajones
+date: 01-06-2021
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+draft: true
+---
+
+# Introduction to R and RStudio
+
+# Project Management With RStudio
+
+# Data Structures
+
+# Exploring Data Frames
+
+# Subsetting Data
+
+# Data frame Manipulation with dplyr
+
+# Introduction to Visualization
+
+# Writing Data
+
+
+
