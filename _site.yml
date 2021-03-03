@@ -12,7 +12,7 @@ navbar:
     - text: "Blog"
       href: blog.html
     - text: "Resume"
-      href: blog.html
+      href: https://topographos.github.io/resume/index.html
     - icon: fa fa-rss
       href: index.xml
 search: false
