@@ -1,5 +1,5 @@
-name: "dispersal"
-title: "The Great Dispersal"
+name: "."
+title: "Michal-ski"
 description: |
   Blog dedicated to Computational Archaeology in the Middle East
 output_dir: "_site"
@@ -9,8 +9,10 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Blog"
+      href: blog.html
+    - text: "Resume"
+      href: blog.html
     - icon: fa fa-rss
       href: index.xml
 search: false

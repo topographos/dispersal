@@ -1,20 +1,63 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to The Great Dispersal",
-    "description": "Welcome to our new blog, The Great Dispersal. We hope you enjoy \nreading what we have to say!",
+    "path": "posts/2021-01-13-intro-to-r-part-1/",
+    "title": "Intro to R - Part 1",
+    "description": "A Introduction to R and RStudio",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Michal Michalski",
+        "url": "https://dispersal.rbind.io/about.html"
       }
     ],
-    "date": "2021-01-03",
-    "categories": [],
-    "contents": "\n\n\n\n",
+    "date": "2021-01-06",
+    "categories": [
+      "R",
+      "Training"
+    ],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-01-03T21:50:58+00:00",
+    "last_modified": "2021-01-13T22:21:09+00:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2021-01-13-intro-to-r-part-2/",
+    "title": "Intro to R - Part 2",
+    "description": "Data Structures",
+    "author": [
+      {
+        "name": "Michal Michalski",
+        "url": "https://dispersal.rbind.io/about.html"
+      }
+    ],
+    "date": "2021-01-06",
+    "categories": [
+      "R",
+      "Training"
+    ],
+    "contents": "\n\nContents\nData Structures\nIntroduction\nData Types\nCharacter\nNumeric\nInteger\nLogical\n\nData Structures\nVectors\nFactors\nLists\n\nFunctions Review\nAcknowledgments\n\n\nData Structures\nIntroduction\nMost common dataset format is spreadsheet or a CSV file. Let’s start by reading in a file of archaeological surveys from the Middle East. We will load and save the data as an object named surveys:1\n\n\nsurveys = read.csv(\"data/surveys.csv\")\n\n\n\nLet’s have a look at the table:\n\nname\nabbreviation\nsites_number\nsize_km\ncountry\nAmuq Valley Regional Project\nAVRP\n178\n535\nTurkey\nBekaa Valley Survey\nBVS\n229\n2749\nLebanon\nLand of Carchemish Project Survey\nLCP\n31\n500\nSyria\nTell Hamoukar Survey\nTHS\n42\n125\nSyria\n\nNow, we can jump to exploring the dataset right away, pulling out columns using the $ operator:\n\n\nsurveys$country\n\n\n[1] \"Turkey\"  \"Lebanon\" \"Syria\"   \"Syria\"  \n\nsurveys$size_km\n\n\n[1]  535 2749  500  125\n\nWe can try other operations on the columns, for example if we discovered that each survey was actually 20 square kilometers bigger:\n\n\nsurveys$size_km + 20\n\n\n[1]  555 2769  520  145\n\nBut what about adding values of the below columns\n\n\nsurveys$size_km + surveys$country\n\n\nError in surveys$size_km + surveys$country: non-numeric argument to binary operator\n\nUnderstanding what happened here is key to successfully analyzing data in R.\nThe previous command produced an error because we tried to add for example 500 to Syria, a two different data types. Thus, to avoid this, we can check the data type of something by typing:\n\n\nclass(surveys$size_km)\n\n\n[1] \"integer\"\n\nIn R everything is an object. Objects are used to hold data values. The type of stored value is defined by data types.\nThere are six basic types in R:\ncharacter\nnumeric (real and decimal)\ninteger\nlogical\ncomplex\nraw\nThese data types can be combined to create data structures:\natomic vector\nfactor\nlist\nmatrix\narray\ndata frame\nR provides many functions to examine features of the objects, for example\nclass() - what kind of object is it (high-level)?\ntypeof() - what is the objects data type (low-level)?\nlength() - how long is it? What about two dimensional objects?\nattributes() - does it have any metadata?\nData Types\nCharacter\nWhat is the site name?\n\n\nclass(\"Tell Brak\")\n\n\n[1] \"character\"\n\nText or string are called characters.\nNumeric\nWhat is the site area?\n\n\nclass(40.1)\n\n\n[1] \"numeric\"\n\nDecimal values are called numeric.\nInteger\nWhat is the site height?\n\n\nclass(40L) # The L suffix forces the number to be an integer\n\n\n[1] \"integer\"\n\nInteger, a number written without a fractional component.In R all integers are also numeric.\nLogical\nIs it a mound? (YES/NO == TRUE/FALSE)\n\n\nis_mound = TRUE\n\n\n\nLogical values are denoted by Boolean values, TRUE or FAlSE.\nData Structures\nVectors\nVector are one-dimensional arrays that hold one type of data.\n\n\nmy_vector = vector(length = 3)\nmy_vector\n\n\n[1] FALSE FALSE FALSE\n\nA vector in R is essentially an ordered list of things, with the special condition that everything in the vector must be the same basic data type. If you do not choose the data type, it will default to logical; or, you can declare an empty vector of whatever type you like.\n\n\nanother_vector = vector(mode='character', length = 3)\n\nanother_vector\n\n\n[1] \"\" \"\" \"\"\n\nstr(another_vector)\n\n\n chr [1:3] \"\" \"\" \"\"\n\nThe somewhat cryptic output from this command indicates the basic data type found in this vector - in this case chr, character; an indication of the number of things in the vector - actually, the indexes of the vector, in this case [1:3]; and a few examples of what’s actually in the vector - in this case empty character strings. If we similarly do\n\n\nstr(surveys$sites_number)\n\n\n int [1:4] 178 229 31 42\n\nWe see that surveys$sites_number is a vector, too - the columns of data we load into R data frames are all vectors, and that’s the root of why R forces everything in a column to be the same basic data type.\nYou can also make vectors with explicit contents with the combine function:\n\n\ncombine_vector = c(178, 229, 31,42)\ncombine_vector\n\n\n[1] 178 229  31  42\n\nFactors\nLists\nFunctions Review\n\nFunction\nDescription\nread.table\nMaximum rows to print per page.\nread.csv\nMaximum rows in the table (defaults to 1000).\nread.delim\nMaximum columns in the table (defaults to 10).\nclass()\nPrint row names as part of the table.\nstr()\nreturns structure of the object\nvector()\nproduces a vector of defined mode and length\nc()\ncombine function\n\nAcknowledgments\nThis is a place to recognize people and institutions. It may also be a good place to acknowledge and cite software that makes your work possible.\n\nThis will become a hover-able footnote↩︎\n",
+    "preview": {},
+    "last_modified": "2021-01-24T21:49:06+00:00",
+    "input_file": "intro-to-r-part-2.utf8.md"
+  },
+  {
+    "path": "posts/2021-01-13-intro-to-r-part-3/",
+    "title": "Intro to R - Part 3",
+    "description": "Data Structures",
+    "author": [
+      {
+        "name": "Michal Michalski",
+        "url": "https://dispersal.rbind.io/about.html"
+      }
+    ],
+    "date": "2021-01-06",
+    "categories": [
+      "R",
+      "Training"
+    ],
+    "contents": "\n\nContents\nData Structures\nData Types\nData Structures\nFunctions Review\n\n\nData Structures\nIntroduction\nMost common dataset format is spreadsheet or a CSV file. Let’s start by reading in a file of archaeological surveys from the Middle East. We will load and save the data as an object named surveys:1\n\n\nsurveys = read.csv(\"data/surveys.csv\")\n\n\n\nLet’s have a look at the table:\n\nname\nabbreviation\nsites_number\nsize_km\ncountry\nAmuq Valley Regional Project\nAVRP\n178\n535\nTurkey\nBekaa Valley Survey\nBVS\n229\n2749\nLebanon\nLand of Carchemish Project Survey\nLCP\n31\n500\nSyria\nTell Hamoukar Survey\nTHS\n42\n125\nSyria\n\nNow, we can jump to exploring the dataset right away, pulling out columns using the $ operator:\n\n\nsurveys$country\n\n\n[1] \"Turkey\"  \"Lebanon\" \"Syria\"   \"Syria\"  \n\nsurveys$size_km\n\n\n[1]  535 2749  500  125\n\nWe can try other operations on the columns, for example if we discovered that each survey was actually 20 square kilometers bigger:\n\n\nsurveys$size_km + 20\n\n\n[1]  555 2769  520  145\n\nBut what about adding values of the below columns\n\n\nsurveys$size_km + surveys$country\n\n\nError in surveys$size_km + surveys$country: non-numeric argument to binary operator\n\nUnderstanding what happened here is key to successfully analyzing data in R.\nThe previous command produced an error because we tried to add for example 500 to Syria, a two different data types. Thus, to avoid this, we can check the data type of something by typing:\n\n\nclass(surveys$size_km)\n\n\n[1] \"integer\"\n\nIn R everything is an object. Objects are used to hold data values. The type of stored value is defined by data types.\nThere are six basic types in R:\ncharacter\nnumeric (real and decimal)\ninteger\nlogical\ncomplex\nraw\nThese data types can be combined to create data structures:\natomic vector\nfactor\nlist\nmatrix\narray\ndata frame\nR provides many functions to examine features of the objects, for example\nclass() - what kind of object is it (high-level)?\ntypeof() - what is the objects data type (low-level)?\nlength() - how long is it? What about two dimensional objects?\nattributes() - does it have any metadata?\nData Types\nCharacter\nWhat is the site name?\n\n\nclass(\"Tell Brak\")\n\n\n[1] \"character\"\n\nText or string are called characters.\nNumeric\nWhat is the site area?\n\n\nclass(40.1)\n\n\n[1] \"numeric\"\n\nDecimal values are called numeric.\nInteger\nWhat is the site height?\n\n\nclass(40L) # The L suffix forces the number to be an integer\n\n\n[1] \"integer\"\n\nInteger, a number written without a fractional component.In R all integers are also numeric.\nLogical\nIs it a mound? (YES/NO == TRUE/FALSE)\n\n\nis_mound = TRUE\n\n\n\nLogical values are denoted by Boolean values, TRUE or FAlSE.\nData Structures\nVectors\nVector are one-dimensional arrays that hold one type of data.\n\n\nmy_vector = vector(length = 3)\nmy_vector\n\n\n[1] FALSE FALSE FALSE\n\nA vector in R is essentially an ordered list of things, with the special condition that everything in the vector must be the same basic data type. If you do not choose the data type, it will default to logical; or, you can declare an empty vector of whatever type you like.\n\n\nanother_vector = vector(mode='character', length = 3)\n\nanother_vector\n\n\n[1] \"\" \"\" \"\"\n\nstr(another_vector)\n\n\n chr [1:3] \"\" \"\" \"\"\n\nThe somewhat cryptic output from this command indicates the basic data type found in this vector - in this case chr, character; an indication of the number of things in the vector - actually, the indexes of the vector, in this case [1:3]; and a few examples of what’s actually in the vector - in this case empty character strings. If we similarly do\n\n\nstr(surveys$sites_number)\n\n\n int [1:4] 178 229 31 42\n\nWe see that surveys$sites_number is a vector, too - the columns of data we load into R data frames are all vectors, and that’s the root of why R forces everything in a column to be the same basic data type.\nYou can also make vectors with explicit contents with the combine function:\n\n\ncombine_vector = c(178, 229, 31,42)\ncombine_vector\n\n\n[1] 178 229  31  42\n\nFactors\nLists\nFunctions Review\n\nFunction\nDescription\nread.table\nMaximum rows to print per page.\nread.csv\nMaximum rows in the table (defaults to 1000).\nread.delim\nMaximum columns in the table (defaults to 10).\nclass()\nPrint row names as part of the table.\nstr()\nreturns structure of the object\nvector()\nproduces a vector of defined mode and length\nc()\ncombine function\n\n\nThis will become a hover-able footnote↩︎\n",
+    "preview": {},
+    "last_modified": "2021-01-28T13:41:11+00:00",
+    "input_file": "intro-to-r-part-3.utf8.md"
   },
   {
     "path": "posts/2019-01-05-project-proposal/",

@@ -1,5 +1,42 @@
 ---
-title: "The Great Dispersal"
+title: "Michal Michalski"
+image: "images/michal.jpg"
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/"
+  - label: Twitter
+    url: "https://twitter.com/"
+  - label: GitHub
+    url: "https://github.com/"
+  - label: Email
+    url: "mailto:email@email.com"
+output:
+  postcards::trestles
 site: distill::distill_website
-listing: posts
 ---
+ 
+*I like maps, because they lie.  
+Because they give no access to the vicious truth.  
+Because great-heartedly, good-naturedly  
+they spread before me a world
+not of this world.*
+
+([**Map**](https://www.newyorker.com/magazine/2014/04/14/map) by Wislawa Szymborska - translated by Clare Cavanagh)
+
+## About me
+
+Frank Hermosillo studies neural networks and their applications at Google 
+Brain. His research focuses on differentiable network pruning approximation and 
+decentralized gradient inversion mechanics. He frequently collaborates with 
+researchers who study machine learning, computer vision, and cognitive science.
+His work has been featured in WIRED, The Atlantic, Newsweek, and The New York 
+Times Magazine.
+
+## Portfolio
+
+Frank Hermosillo studies neural networks and their applications at Google 
+Brain. His research focuses on differentiable network pruning approximation and 
+decentralized gradient inversion mechanics. He frequently collaborates with 
+researchers who study machine learning, computer vision, and cognitive science.
+His work has been featured in WIRED, The Atlantic, Newsweek, and The New York 
+Times Magazine.

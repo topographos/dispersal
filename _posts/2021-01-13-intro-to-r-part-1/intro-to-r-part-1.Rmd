@@ -1,0 +1,52 @@
+---
+title: "Intro to R - Part 1"
+description: |
+    A Introduction to R 
+author:
+  - name: Michal Michalski
+    url: https://dispersal.rbind.io/about.html
+    affiliation: Durham University
+date: 01-06-2021
+repository_url: https://github.com/topographos/dispersal/
+creative_commons: CC BY-NC
+bibliography: intro_to_r.bib
+categories:
+  - R
+  - Training
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+draft: false
+---
+
+# Motivation
+
+# Before Starting The Workshop
+
+# Introduction to RStudio
+
+# Workflow within RStudio
+
+# Introduction to R
+
+# Using R as a calculator
+
+# Comparing things
+
+# Variables and assignment
+
+# Installing Packages
+
+
+::: l-body-outset
+| Option           | Description                                    |
+|------------------|------------------------------------------------|
+| `rows.print`     | Maximum rows to print per page.                |
+| `max.print`      | Maximum rows in the table (defaults to 1000).  |
+| `cols.print`     | Maximum columns in the table (defaults to 10). |
+| `rownames.print` | Print row names as part of the table.          |
+:::
+
+

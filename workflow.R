@@ -11,10 +11,10 @@ postcards::create_postcard("about.Rmd",template = "jolla")
 # create blog posts ----
 
 # create post
-create_post("Intro to R", draft = TRUE)
+create_post("Intro to R - Part 3", draft = FALSE)
 
 
 # rename to reflect the title and date in the post YAML front-matter
-rename_post_dir("_posts/2016-11-08-sharpe-ratio") 
+rename_post_dir("_posts/2021-01--intro-to-r-for/")
 
 ?rename_post_dir()
