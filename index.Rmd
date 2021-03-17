@@ -23,20 +23,25 @@ not of this world.*
 
 ([**Map**](https://www.newyorker.com/magazine/2014/04/14/map) by Wislawa Szymborska - translated by Clare Cavanagh)
 
-## About me
+####  Projects Selection
 
-Frank Hermosillo studies neural networks and their applications at Google 
-Brain. His research focuses on differentiable network pruning approximation and 
-decentralized gradient inversion mechanics. He frequently collaborates with 
-researchers who study machine learning, computer vision, and cognitive science.
-His work has been featured in WIRED, The Atlantic, Newsweek, and The New York 
-Times Magazine.
+Spatial Analysis ans Mapping:
 
-## Portfolio
+* COVID - 19 [notes `r icons::fontawesome("link")`](https://www.newyorker.com/magazine/2014/04/14/map) 
+* Safety Cameras - accidents hotpots in Scotland
+* Bus Accessibility Index
 
-Frank Hermosillo studies neural networks and their applications at Google 
-Brain. His research focuses on differentiable network pruning approximation and 
-decentralized gradient inversion mechanics. He frequently collaborates with 
-researchers who study machine learning, computer vision, and cognitive science.
-His work has been featured in WIRED, The Atlantic, Newsweek, and The New York 
-Times Magazine.
+Remote Sensing:
+
+* LiDAR
+* Scottish Remote Sensing Working Group
+
+Research
+
+* DOHA - Doha Online Historical Atlas
+* PostgreSQL Database for CLASS Project
+* VUG in R
+* Empires Size in R
+
+Publications:
+
