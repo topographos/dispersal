@@ -23,24 +23,4 @@ not of this world.*
 
 ([**Map**](https://www.newyorker.com/magazine/2014/04/14/map) by Wislawa Szymborska - translated by Clare Cavanagh)
 
-####  My work samples
-
-Applied Spatial Analysis:
-
-* COVID - 19 - [notes `r icons::fontawesome("link")`](https://topographos.github.io/covid/) 
-* Safety Cameras
-* Scottish Access to Bus Indicator - [official publication `r icons::fontawesome("link")` ](https://www.transport.gov.scot/publication/transport-and-travel-in-scotland-results-from-the-scottish-household-survey-1/scottish-access-to-bus-indicator-2019-weekday-score/) 
-* Population Clusters - [notes `r icons::fontawesome("link")`](https://topographos.github.io/kdepop/) 
-* LiDAR - [notes `r icons::fontawesome("link")`](https://topographos.github.io/motte/) 
-
-Academia
-
-* DOHA - Doha Online Historical Atlas - [web app `r icons::fontawesome("link")`](http://originsofdoha.org/doha/) 
-* PostgreSQL Database for CLASS Project
-* BANEA Conference 2020 - [poster `r icons::fontawesome("link")`](https://topographos.github.io/banea/index.html) 
-
-Random
-
-* VUG in R
-
 
