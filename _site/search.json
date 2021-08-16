@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About",
+      "description": "An exercise in technical writing and academic thinking. \\\nThis blog started as part of my interrupted PhD reseach at Durham University in years 2019-2021. Conseqently   abandoned, turned into hobby if not an obsession ;) \n",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-08-16T21:15:33+01:00"
+    },
+    {
+      "path": "index.html",
+      "title": "The Great Dispersal",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-08-16T21:15:34+01:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

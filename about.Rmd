@@ -1,0 +1,11 @@
+---
+title: "About"
+description: |
+  An exercise in technical writing and academic thinking. \
+  This blog started as part of my interrupted PhD reseach at Durham University in years 2019-2021. Conseqently   abandoned, turned into hobby if not an obsession ;) 
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
