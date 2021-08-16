@@ -5,6 +5,7 @@ description: |
 output_dir: "_site"
 theme: theme.css
 navbar:
+  search: false
   right:
     - text: "Home"
       href: index.html
