@@ -2,7 +2,7 @@ name: "."
 title: " "
 description: |
   The Great Dispersal
-output_dir: "_site"
+output_dir: "docs" 
 theme: theme.css
 navbar:
   search: false
